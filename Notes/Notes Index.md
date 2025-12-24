@@ -1,6 +1,31 @@
 - ### [[APT]]
-- ### [[Config]]
 - ### [[Update package]]
+---
+- ### [[Config]]
+---
 - ### [[ASCII]]
+---
 - ### [[Compile Kernel]]
+- ### [[Linux vs. Unix]]
+- ### [[GNU]]
+- ### [[POSIX]]
+- ### [[MINIX]]
+---
+- ### [[Hash]]
+- ### [[Encryption]]
+- ### [[Major hash functions compared]]
+- ### [[Salt]]
+- ### [[Stretching]]
+- ### [[Rainbow Table Attacks]]
+- ### [[Pepper]]
+---
+- ### [[API]]
+- ### [[Curl]]
+---
+- ### [[Debugging]]
+- ### [[Running vs. Debugging]]
+---
+- ### [[Crash]]
+- ### [[Windows Subsystem for Linux (WSL)]]
+
 ### [[All Indexes | Back]] 

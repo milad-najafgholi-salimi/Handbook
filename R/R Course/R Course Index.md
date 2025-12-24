@@ -9,4 +9,9 @@
 - ### [[Head and Tail]]
 - ### [[Missing Values]]
 - ### [[Installing Packages]]
+- ### [[R help]]
+- ### [[R view function]]
+# Section 2
+- ### [[ggplot 2 Tutorial]]
+- ### [[Tidyverse]]
 ## [[R Indexes| Back]]

@@ -1,4 +1,4 @@
-In **R**, installing packages is straightforward using `install.packages()
+In **R**, installing packages is straightforward using `install.packages()`
 
 ---
 

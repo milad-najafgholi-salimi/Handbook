@@ -21,7 +21,7 @@ Common examples:
     
 - `git log -p` → shows code changes per commit
     
-
+- `git log --reverse` -> full commit history but reverse
 It helps you understand **what changed, when, and by whom**.
 
 ## Common and useful `git log` options
