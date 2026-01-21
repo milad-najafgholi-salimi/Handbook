@@ -291,3 +291,30 @@ Clear intent: _“I am restoring files.”_
 |`git checkout -- file`|`git restore file`|
 
 > `git checkout` still works and is not deprecated, but many teams prefer the newer commands for clarity.
+
+---
+### Bonus
+if you ran something like:
+```
+git checkout <commit-hash>
+```
+In this case, `HEAD` points to **one specific commit**, not a branch — so `git log HEAD` shows only history up to _that commit_.
+
+Check:
+```
+git status
+```
+If you see:
+```
+HEAD detached at a3f1c2d
+```
+To see all commits in that repo history:
+```
+git switch <branch-name>
+```
+
+### Also:
+You can go to another branch by using:
+```
+git checkout <branch>
+```

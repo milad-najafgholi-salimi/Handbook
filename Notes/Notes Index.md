@@ -1,8 +1,16 @@
 - ### [[APT]]
-- ### [[Config]]
 - ### [[Update package]]
+---
+- ### [[Config]]
+---
 - ### [[ASCII]]
+---
 - ### [[Compile Kernel]]
+- ### [[Linux vs. Unix]]
+- ### [[GNU]]
+- ### [[POSIX]]
+- ### [[MINIX]]
+---
 - ### [[Hash]]
 - ### [[Encryption]]
 - ### [[Major hash functions compared]]
@@ -10,5 +18,12 @@
 - ### [[Stretching]]
 - ### [[Rainbow Table Attacks]]
 - ### [[Pepper]]
+---
+- ### [[API]]
+- ### [[Curl]]
+---
+- ### [[Debugging]]
+- ### [[Running vs. Debugging]]
+---
 
 ### [[All Indexes | Back]] 

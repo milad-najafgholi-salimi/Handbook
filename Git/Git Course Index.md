@@ -17,5 +17,6 @@
 - ### [[Git mv]]
 - ### [[Git rm]]
 - ### [[Git commit --amend]]
+- ### [[Git revert]]
 
 ### [[All Indexes | Back]] 
