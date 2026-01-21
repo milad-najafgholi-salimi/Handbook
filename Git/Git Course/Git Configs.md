@@ -70,10 +70,14 @@ git config --global core.autocrlf true    # Windows
 ### Edit global config
 
 `git config --global --edit`
+or 
+`git config --global -e`
 
 ### Edit local repo config
 
 `git config --local --edit`
+or
+`git config --local -e`
 
 ---
 

@@ -18,5 +18,18 @@
 - ### [[Git rm]]
 - ### [[Git commit --amend]]
 - ### [[Git revert]]
-
+- ### [[Branches & merging Guide]]
+# Section 4
+- ### [[Git push]]
+- ### [[Git pull]]
+- ### [[Git fetch]]
+- ### [[Git remote]]
+- ### [[Git rebase]]
+- ### [[What is origin]]
+- ### [[Squash in Git]]
+# Section 5
+- ### [[Git tag]]
+- ### [[Other useful commit options]]
+- ### [[Git Clone]]
+- ### [[CI-CD]]
 ### [[All Indexes | Back]] 
