@@ -2,7 +2,7 @@
 ```
 git commit --allow-empty -m "start project"
 ```
-- Commit without editing:
+- User previous commit message (no editor):
 ```
 git commit --no-edit
 ```
