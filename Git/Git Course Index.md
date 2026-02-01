@@ -32,8 +32,4 @@
 - ### [[Other useful commit options]]
 - ### [[Git Clone]]
 - ### [[CI-CD]]
-<<<<<<< HEAD
 ### [[All Indexes | Back]] 
-=======
-### [[All Indexes | Back]] 
->>>>>>> b4e16b5 (Finish Git Course)

@@ -3,4 +3,13 @@
 - ### [[Integers in Python]]
 - ### [[Variables in Python]]
 - ### [[Strings in Python]]
+- ### [[Lists in Python]]
+- ### [[Dictionaries in Python]]
+- ### [[Tuples in Python]]
+- ### [[Sets in Python]]
+- ### [[Boolean in Python]]
+- ### [[FileIO in Python]]
+- ### [[OS Python module]]
+# Conditions and Loops
+- ### [[If statement in Python]]
 ### [[All Indexes | Back]] 

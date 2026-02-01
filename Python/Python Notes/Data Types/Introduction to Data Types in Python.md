@@ -178,7 +178,7 @@ Everything else is `True`.
 
 Text data:
 ```
-name = "Ali"
+name = "Milad"
 ```
 Strings are:
 
@@ -188,12 +188,12 @@ Strings are:
     
 - Unicode
 ```
-name[0]      # 'A'
+name[0]      # 'M'
 name.upper()
 ```
 Immutability:
 ```
-name[0] = "a"   # ❌ error
+name[0] = "m"   # ❌ error
 ```
 
 ---
