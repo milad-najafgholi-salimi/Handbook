@@ -113,6 +113,74 @@ If the USB module isn’t listed, it may not be loaded.
 | `modprobe` | Load/unload modules |
 | `modinfo`  | Show module details |
 | `uname -r` | Show kernel version |
+
+---
+## What is `modprobe`?
+
+`modprobe` is a **user-space utility for managing Linux kernel modules**. Kernel modules are pieces of code that can be loaded into or removed from the kernel at runtime (e.g., drivers for hardware, filesystem support, networking features).
+
+### What `modprobe` does
+
+- **Loads kernel modules** into the running kernel
+    
+- **Removes kernel modules**
+    
+- **Automatically resolves dependencies** between modules
+    
+- Reads configuration files to apply options and aliases
+### Common uses
+```
+modprobe usb_storage     # Load the usb_storage module
+modprobe -r usb_storage  # Remove the usb_storage module
+```
+### Key features
+
+- **Dependency handling**  
+    If a module depends on other modules, `modprobe` loads them automatically using:
+```
+/lib/modules/$(uname -r)/modules.dep
+```
+
+- Configuration support
+	Reads:
+```
+/etc/modprobe.conf
+/etc/modprobe.d/*.conf
+```
+- These files define:
+    
+    - Module aliases
+        
+    - Blacklisted modules
+        
+    - Module parameters
+        
+- **Preferred over `insmod`**  
+    `modprobe` is safer and smarter than `insmod` because it handles dependencies and policies.
+    
+
+### Typical real-world use
+
+- Hardware detection at boot
+    
+- Loading network drivers
+    
+- Enabling filesystems (e.g., `ext4`)
+    
+- Managing optional kernel features
+---
+## Direct Comparison: `modprobe` vs `lsmod`
+| Aspect                   | `modprobe`            | `lsmod`                |
+| ------------------------ | --------------------- | ---------------------- |
+| Purpose                  | Manage kernel modules | Display loaded modules |
+| Action type              | Load / unload modules | Read-only              |
+| Modifies kernel state    | ✅ Yes                 | ❌ No                   |
+| Dependency handling      | ✅ Automatic           | ❌ Not applicable       |
+| Configuration aware      | ✅ Yes                 | ❌ No                   |
+| Typical verbs            | _add / remove_        | _list / inspect_       |
+| Requires root privileges | Usually yes           | No                     |
+
+---
 ## Summary
 
 - **`lsmod` lists loaded kernel modules**

@@ -28,6 +28,10 @@ When you:
 All of this happens **without rebooting**.
 
 ---
+## Where is udev directory?
+In Linux, **`udev` does not live in a single directory**, because it is a **device manager**, not just a folder. Its components are spread across several standard locations.
+
+---
 
 ## Why udev Is Important
 

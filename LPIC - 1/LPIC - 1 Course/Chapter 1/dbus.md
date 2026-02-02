@@ -14,6 +14,10 @@ Without D-Bus, each program would need its **own custom communication method**.
 D-Bus provides **one common “language”** for communication.
 
 ---
+## Where is D-Bus directory?
+In Linux, **D-Bus is also not a single directory**, but a message-bus system whose files and runtime state are spread across several standard locations.
+
+---
 ## What D-Bus Is Used For
 
 D-Bus is commonly used to:

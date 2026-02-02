@@ -1,3 +1,4 @@
+# Chapter 1
 - ### [[Sysfs]]
 - ### [[udev]]
 - ### [[dbus]]
@@ -8,9 +9,12 @@
 - ### [[hardware-inspection tools]]
 - ### [[Wild cards and File globbing]]
 - ### [[Firmware]]
+- ### [[POST]]
 - ### [[OS]]
 - ### [[BIOS]]
 - ### [[UEFI]]
+- ### [[Boot Loader]]
 - ### [[Peripheral Devices]]
+- ### [[Logs]]
 
 ### [[All Indexes | Back]] 

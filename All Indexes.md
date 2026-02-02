@@ -2,6 +2,6 @@
 - ### [[Git Course Index]]
 - ### [[Python Index]]
 - ### [[Notes Index]]
-- ### [[LPIC - 1 Index]]
+- ### [[LPIC - 1   Index]]
 - ### [[Vim Index]]
 - ### [[Data Processing & Visualization Index]]
