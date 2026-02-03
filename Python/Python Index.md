@@ -12,4 +12,10 @@
 - ### [[OS Python module]]
 # Conditions and Loops
 - ### [[If statement in Python]]
+- ### [[For loop in Python]]
+- ### [[While loop in Python]]
+- ### [[Break and Continue in Python]]
+- ### [[List comprehension in Python]]
+- ### [[commonly used operators in Python]]
+# Methods & Functions
 ### [[All Indexes | Back]] 
