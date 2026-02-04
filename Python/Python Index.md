@@ -18,4 +18,10 @@
 - ### [[List comprehension in Python]]
 - ### [[commonly used operators in Python]]
 # Methods & Functions
+- ### [[Methods in Python]]
+- ### [[Functions in Python]]
+- ### [[*args & **kwargs]]
+- ### [[Anonymous (Lambda) Functions]]
+- ### [[map() & filter() Built-in Python functions]]
+# Object Oriented Programming
 ### [[All Indexes | Back]] 
