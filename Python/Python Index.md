@@ -42,4 +42,6 @@
 - ### [[Introduction to Error Handling]]
 - ### [[linter in Python]]
 - ### [[Unit test]]
+# Decorators
+- ### [[Introduction to decorators]]
 ### [[All Indexes | Back]] 
