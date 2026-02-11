@@ -46,4 +46,10 @@
 - ### [[Introduction to decorators]]
 # Generators
 - ### [[Introduction to Generators]]
+# Advanced Modules
+- ### [[Datetime Module]]
+- ### [[Math Module]]
+- ### [[Random Module]]
+- ### [[RegEx Module]]
+- ### [[Decimal Module]]
 ### [[All Indexes | Back]] 

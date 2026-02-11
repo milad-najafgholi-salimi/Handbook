@@ -1,4 +1,4 @@
-# 1. What Is a Generator?
+## 1. What Is a Generator?
 
 A **generator** is a special type of iterable in Python that:
 
@@ -13,7 +13,7 @@ Generators are memory-efficient and are especially useful when working with larg
 
 ---
 
-# 2. The Problem Generators Solve
+## 2. The Problem Generators Solve
 
 Consider this example:
 ```
@@ -41,9 +41,9 @@ This difference is crucial for:
 
 ---
 
-# 3. Two Ways to Create Generators
+## 3. Two Ways to Create Generators
 
-## Method 1: Using `yield` (Generator Function)
+### Method 1: Using `yield` (Generator Function)
 
 A function becomes a generator when it uses the `yield` keyword.
 
@@ -67,7 +67,7 @@ for number in gen:
 4
 5
 ```
-### What makes this different from `return`?
+#### What makes this different from `return`?
 
 - `return` → exits the function completely
     
@@ -75,7 +75,7 @@ for number in gen:
     
 
 When the generator is resumed, it continues exactly where it left off.
-## Method 2: Generator Expressions
+### Method 2: Generator Expressions
 
 Similar to list comprehensions but with parentheses.
 
@@ -96,7 +96,7 @@ Difference:
 
 ---
 
-# 4. How Generators Work Internally
+## 4. How Generators Work Internally
 
 When you call a generator function:
 ```
@@ -130,7 +130,7 @@ A `for` loop automatically handles this error.
 
 ---
 
-# 5. Generator vs List — Memory Comparison
+## 5. Generator vs List — Memory Comparison
 
 ### List
 
@@ -162,7 +162,7 @@ gen_obj = (x for x in range(1000))
 print(sys.getsizeof(list_obj))  # large
 print(sys.getsizeof(gen_obj))   # much smaller
 ```
-# 6. Key Characteristics of Generators
+## 6. Key Characteristics of Generators
 
 ✔ Lazy evaluation  
 ✔ Maintain state between yields  
@@ -172,9 +172,9 @@ print(sys.getsizeof(gen_obj))   # much smaller
 
 ---
 
-# 7. Advanced Generator Features
+## 7. Advanced Generator Features
 
-## A) `yield from`
+### A) `yield from`
 
 Used to delegate to another generator.
 
@@ -189,7 +189,7 @@ def generator2():
     yield 3
 ```
 This simplifies chaining generators.
-## B) Sending Values Into Generators
+### B) Sending Values Into Generators
 
 Generators can receive values using `.send()`.
 
@@ -210,7 +210,7 @@ This is the basis for:
     
 - Async programming (before `async/await`)
     
-## C) Closing a Generator
+### C) Closing a Generator
 ```
 gen.close()
 ```
@@ -218,7 +218,7 @@ Raises `GeneratorExit` inside the generator.
 
 ---
 
-# 8. Practical Use Cases
+## 8. Practical Use Cases
 
 ### 1. Reading Large Files
 ```
@@ -254,7 +254,7 @@ Each stage processes one value at a time.
 
 ---
 
-# 9. Generator vs Iterator
+## 9. Generator vs Iterator
 
 All generators are iterators, but not all iterators are generators.
 
@@ -273,7 +273,7 @@ So generators are:
 
 ---
 
-# 10. Common Mistakes
+## 10. Common Mistakes
 
 ### ❌ Trying to index a generator
 ```
@@ -291,7 +291,7 @@ You must recreate it.
 
 ---
 
-# 11. When Should You Use Generators?
+## 11. When Should You Use Generators?
 
 Use generators when:
 
@@ -319,7 +319,7 @@ Do NOT use them when:
 
 ---
 
-# 12. Generators vs Async Generators (Brief Mention)
+## 12. Generators vs Async Generators (Brief Mention)
 
 Normal generator:
 ```
@@ -339,7 +339,7 @@ Common in asynchronous programming.
 
 ---
 
-# Final Conceptual Summary
+## Final Conceptual Summary
 
 A generator is:
 
