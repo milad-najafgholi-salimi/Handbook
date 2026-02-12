@@ -23,7 +23,7 @@ It's like a wiki-link that links every single file together; You don't need to o
 
 ## How to make it beautiful like mine?!
 1. Open obsidian and go to the settings.
-2. Go to "**Community plugins**" and click on "_Browse_".
+2. Go to "**Community plugins**" and click on "_Browse_". (Note: If this is your first time, click on "Turn on community plugins" first.)
 3. Search for "*Style settings*" and download and enable.
 4. Go to "**appearance**" and click on "Manage" and search for "*AnuPpuccin*" or whatever you like and install and enable it.
 5. Go to "**Community plugins**" again and in "**installed plugins**" section click on "*Option*" icon and click on import.
