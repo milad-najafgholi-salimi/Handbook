@@ -52,4 +52,8 @@
 - ### [[Random Module]]
 - ### [[RegEx Module]]
 - ### [[Decimal Module]]
+# Web Scraping
+- ### [[Introduction to Web Scraping]]
+- ### [[Tags]]
+
 ### [[All Indexes | Back]] 
