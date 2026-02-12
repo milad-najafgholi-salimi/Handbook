@@ -55,5 +55,6 @@
 # Web Scraping
 - ### [[Introduction to Web Scraping]]
 - ### [[Tags]]
-
+# Working with images
+- ### [[Introduction to working with images in Python]]
 ### [[All Indexes | Back]] 
