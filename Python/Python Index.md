@@ -57,4 +57,8 @@
 - ### [[Tags]]
 # Working with images
 - ### [[Introduction to working with images in Python]]
+# Work with different data files
+- ### [[Work with CSV files]]
+- ### [[Work with PDF files]]
+- ### [[Work with Excel files]]
 ### [[All Indexes | Back]] 
