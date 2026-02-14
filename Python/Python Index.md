@@ -20,7 +20,7 @@
 # Methods & Functions
 - ### [[Methods in Python]]
 - ### [[Functions in Python]]
-- ### [[*args & **kwargs]]
+- ### [[_args & __kwargs]]
 - ### [[Anonymous (Lambda) Functions]]
 - ### [[map() & filter() Built-in Python functions]]
 # Object Oriented Programming
@@ -52,6 +52,7 @@
 - ### [[Random Module]]
 - ### [[RegEx Module]]
 - ### [[Decimal Module]]
+- ### [[Itertools Module]]
 # Web Scraping
 - ### [[Introduction to Web Scraping]]
 - ### [[Tags]]
@@ -61,4 +62,10 @@
 - ### [[Work with CSV files]]
 - ### [[Work with PDF files]]
 - ### [[Work with Excel files]]
+- ### [[Work with JSON files]]
+# API
+- ### [[API]]
+- ### [[API call in Python]]
+# Venv
+- ### [[Introduction to venv in Python]]
 ### [[All Indexes | Back]] 
