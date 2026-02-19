@@ -1,0 +1,1 @@
+Use classes when you have several related functions. If you have multiple functions that are not related to each other, it's better to use them separately.

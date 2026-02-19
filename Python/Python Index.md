@@ -23,6 +23,7 @@
 - ### [[_args & __kwargs]]
 - ### [[Anonymous (Lambda) Functions]]
 - ### [[map() & filter() Built-in Python functions]]
+- ### [[zip() Built-in Python function]]
 # Object Oriented Programming
 - ### [[OOP in Python]]
 - ### [[__init__ method]]
@@ -34,6 +35,7 @@
 - ### [[Encapsulation]]
 - ### [[Abstraction]]
 - ### [[Inner classes]]
+- ### [[Better to know]]
 # Modules and Packages
 - ### [[Modules and packages]]
 - ### [[How to make a package]]
