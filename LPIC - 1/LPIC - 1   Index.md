@@ -1,20 +1,40 @@
 # Chapter 1
-- ### [[Sysfs]]
-- ### [[udev]]
-- ### [[dbus]]
-- ### [[proc directory]]
-- ### [[loadable kernel modules]]
+## 1. Hardware & System Startup
 - ### [[Hardware]]
-- ### [[Root directory]]
-- ### [[hardware-inspection tools]]
-- ### [[Wild cards and File globbing]]
-- ### [[Firmware]]
+- ### [[Peripheral Devices]]
 - ### [[POST]]
-- ### [[OS]]
 - ### [[BIOS]]
 - ### [[UEFI]]
+- ### [[Firmware]]
 - ### [[Boot Loader]]
-- ### [[Peripheral Devices]]
-- ### [[Logs]]
+- ### [[init]]
+- ### [[Systemd]]
+- ### [[Linux Runlevels and Boot Targets]]
+- ### [[Linux System States - Rescue, Emergency, Reboot, Halt, and Poweroff]]
+- ### [[SysV runlevels]]
+- ### [[Checking status and setting defaults]]
 
+---
+## 2. Kernel & Modules
+- ### [[OS]]
+- ### [[loadable kernel modules]]
+- ### [[hardware-inspection tools]]
+---
+## 3. Filesystems & Directories
+- ### [[Root directory]]
+- ### [[proc directory]]
+- ### [[Sysfs]]
+---
+## 4. Device Management & Logging
+- ### [[udev]]
+- ### [[Logs]]
+- ### [[dmesg]]
+- ### [[journalctl]]
+---
+## 5.File Operations
+- ### [[Wild cards and File globbing]]
+---
+## 6. Inter-Process Communication
+- ### [[dbus]]
+# Chapter 2
 ### [[All Indexes | Back]] 

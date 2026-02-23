@@ -46,7 +46,16 @@ lsusb -t        # tree view (USB topology)
 
 # 2. `lspci` — PCI / PCIe Devices
 
-### What it does
+>_Note:_ **PCI** stands for **Peripheral Component Interconnect**, a standardized bus system introduced in 1992 by Intel to connect peripheral devices—like graphics cards, sound cards, network cards, and storage controllers—to a computer’s motherboard.
+
+In summary:
+
+- **PCI** = Legacy standard for connecting peripherals. 
+    
+- **PCIe** = Modern successor with superior speed and efficiency. 
+    
+- **PCI slots** are now uncommon in new systems but may still exist for compatibility.
+### What `lspci` does
 
 Lists **PCI and PCI Express devices**.
 

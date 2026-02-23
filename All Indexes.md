@@ -2,6 +2,7 @@
 - ### [[Git Course Index]]
 - ### [[Python Index]]
 - ### [[DSA with Python Index]]
+- ### [[MySQL Index]]
 - ### [[Data Processing & Visualization Index]]
 - ### [[Notes Index]]
 - ### [[LPIC - 1   Index]]
