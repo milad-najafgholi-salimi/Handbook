@@ -35,6 +35,23 @@ with open('output.json', 'w') as file:
     json.dump(data, file)  # Note: dump() not dumps()
 ```
 
+- از `json.load(fp)` برای **خواندن JSON از یک فایل/stream** است (ورودی‌اش یک file-like object است).
+- از `json.loads(s)` برای **خواندن JSON از یک رشته (string/bytes)** است (ورودی‌اش متن JSON است).
+### مثال `load` (از فایل)
+```
+import json
+
+with open("data.json", "r", encoding="utf-8") as f:
+    data = json.load(f)   # f = file object
+```
+### مثال `loads` (از رشته)
+```
+import json
+
+s = '{"name":"Ali","age":25}'
+data = json.loads(s)      # s = string
+```
+
 ---
 ## JSON to Python Type Mapping
 | JSON          | Python |

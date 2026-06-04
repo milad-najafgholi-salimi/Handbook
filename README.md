@@ -8,6 +8,9 @@ My main sources to gathering these information are from:
 - Paid courses
 - Maktabkhooneh.org
 - https://github.com/jadijadi
+- Ali Bigdeli
+- Jadi Mirmirani
+- Farzad Minooie
 
 To have a beautiful experience, open ***"All indexes.md"*** file in **Obsidian**. 
 It's like a wiki-link that links every single file together; You don't need to open files manually. Just search your topic in Sorted lists.

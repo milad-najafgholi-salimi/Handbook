@@ -27,5 +27,13 @@
 ---
 - ### [[Crash]]
 - ### [[Windows Subsystem for Linux (WSL)]]
+---
+- ### [[tty]]
+---
+- ### [[shallow copy vs. deep copy]]
+
+---
+- ### [[interpreter]]
+- ### [[zero exit status]]
 
 ### [[All Indexes | Back]] 
