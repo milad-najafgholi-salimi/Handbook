@@ -9,9 +9,9 @@
 | ^        | Exponent                          | x ^ y   |
 | %%       | Modulus (Remainder from division) | x %% y  |
 | %/%      | Integer Division                  | x %/% y |
-- Note: <<- is a global assigner.
+- Note: `<<-` is a global assigner.
 It is also possible to turn the direction of the assignment operator.
-x <- 3 is equal to 3 -> x .
+x `<-` 3 is equal to 3 `->` x .
 
 ---
 #### Comparison Operators

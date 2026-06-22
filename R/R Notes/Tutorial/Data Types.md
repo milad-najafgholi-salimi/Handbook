@@ -5,7 +5,7 @@ x <- 10.5
 class(x)
 
 # integer
-x >- 1000L
+x <- 1000L
 class(x)
 
 # complex

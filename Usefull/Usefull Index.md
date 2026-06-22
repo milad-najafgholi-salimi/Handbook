@@ -1,1 +1,3 @@
 - ### [[Flowchart + Mermaid]]
+- ### [[Teaching supervised learning algorithms in machine learning]]
+- ### [[Important and Practical Python Packages]]

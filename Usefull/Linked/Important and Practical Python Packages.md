@@ -1,0 +1,15 @@
+- requests
+- json
+- sqlite3
+- flask
+- fastAPI
+- matplotlib
+- numpy
+- virtualenv
+- bs4
+- selenium
+- openCV
+- psychopg2
+- streamlit
+- pyqt & pyside
+- kivy

@@ -14,6 +14,7 @@ z <- 1i   [Also: z <- 3 + 5i]   # complex
     * as.numeric()
     * as.integer()
     * as.complex()
+
 Example:
 ```
 x <- 1L     # integer

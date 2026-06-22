@@ -71,4 +71,6 @@
 # Venv
 - ### [[Introduction to venv in Python]]
 
+# Extra - Good to know
+- ### [[Python notes]]
 ### [[Python Index| Back]] 
