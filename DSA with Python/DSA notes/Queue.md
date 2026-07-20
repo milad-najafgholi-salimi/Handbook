@@ -24,46 +24,184 @@ A **queue** is a linear data structure that follows the **FIFO (First In, Fir
 ---
 ## Implementations in Python
 
-### Method 1: Using List (Not Efficient for Large Queues)
+### Method 1: Using List (Array) - Class way and simple way
+
+#### Simple way:
+```
+queue = []
+
+# Enqueue
+queue.append('A')
+queue.append('B')
+queue.append('C')
+print("Queue: ", queue)
+
+# Peek
+frontElement = queue[0]
+print("Peek: ", frontElement)
+
+# Dequeue
+poppedElement = queue.pop(0)
+print("Dequeue: ", poppedElement)
+
+print("Queue after Dequeue: ", queue)
+
+# isEmpty
+isEmpty = not bool(queue)
+print("isEmpty: ", isEmpty)
+
+# Size
+print("Size: ", len(queue))
+
+# Output:
+Queue: ['A', 'B', 'C']  
+Peek: A  
+Dequeue: A  
+Queue after Dequeue: ['B', 'C']  
+isEmpty: False  
+Size: 2
+```
+
+#### Class way - Better functionality:
 ```
 class Queue:
-    def __init__(self):
-        self.items = []
+  def __init__(self):
+    self.queue = []
     
-    def enqueue(self, item):
-        """Add item to rear of queue"""
-        self.items.append(item)
-    
-    def dequeue(self):
-        """Remove and return front item"""
-        if not self.is_empty():
-            return self.items.pop(0)  # O(n) operation!
-        return None
-    
-    def front(self):
-        """Return front item without removing"""
-        if not self.is_empty():
-            return self.items[0]
-        return None
-    
-    def is_empty(self):
-        return len(self.items) == 0
-    
-    def size(self):
-        return len(self.items)
-    
-    def display(self):
-        print(f"Front -> {self.items} <- Rear")
+  def enqueue(self, element):
+    self.queue.append(element)
 
-# Example
-queue = Queue()
-queue.enqueue(10)
-queue.enqueue(20)
-queue.enqueue(30)
-queue.display()  # Front -> [10, 20, 30] <- Rear
-print(f"Dequeued: {queue.dequeue()}")  # Dequeued: 10
-print(f"Front: {queue.front()}")       # Front: 20
+  def dequeue(self):
+    if self.isEmpty():
+      return "Queue is empty"
+    return self.queue.pop(0)
+
+  def peek(self):
+    if self.isEmpty():
+      return "Queue is empty"
+    return self.queue[0]
+
+  def isEmpty(self):
+    return len(self.queue) == 0
+
+  def size(self):
+    return len(self.queue)
+
+# Create a queue
+myQueue = Queue()
+
+myQueue.enqueue('A')
+myQueue.enqueue('B')
+myQueue.enqueue('C')
+
+print("Queue: ", myQueue.queue)
+print("Peek: ", myQueue.peek())
+print("Dequeue: ", myQueue.dequeue())
+print("Queue after Dequeue: ", myQueue.queue)
+print("isEmpty: ", myQueue.isEmpty())
+print("Size: ", myQueue.size())
+
+# Output:
+Queue: ['A', 'B', 'C']  
+Peek: A  
+Dequeue: A  
+Queue after Dequeue: ['B', 'C']  
+isEmpty: False  
+Size: 2
 ```
+
+**Note:** While using a list is simple, removing elements from the beginning (dequeue operation) requires shifting all remaining elements, making it less efficient for large queues.
+
+## Queue Implementation using Linked Lists
+A linked list consists of nodes with some sort of data, and a pointer to the next node.
+
+A big benefit with using linked lists is that nodes are stored wherever there is free space in memory, the nodes do not have to be stored contiguously right after each other like elements are stored in arrays. Another nice thing with linked lists is that when adding or removing nodes, the rest of the nodes in the list do not have to be shifted.
+
+#### Creating a Queue using a Linked List:
+```
+class Node:
+  def __init__(self, data):
+    self.data = data
+    self.next = None
+
+class Queue:
+  def __init__(self):
+    self.front = None
+    self.rear = None
+    self.length = 0
+
+  def enqueue(self, element):
+    new_node = Node(element)
+    if self.rear is None:
+      self.front = self.rear = new_node
+      self.length += 1
+      return
+    self.rear.next = new_node
+    self.rear = new_node
+    self.length += 1
+
+  def dequeue(self):
+    if self.isEmpty():
+      return "Queue is empty"
+    temp = self.front
+    self.front = temp.next
+    self.length -= 1
+    if self.front is None:
+      self.rear = None
+    return temp.data
+
+  def peek(self):
+    if self.isEmpty():
+      return "Queue is empty"
+    return self.front.data
+
+  def isEmpty(self):
+    return self.length == 0
+
+  def size(self):
+    return self.length
+
+  def printQueue(self):
+    temp = self.front
+    while temp:
+      print(temp.data, end=" -> ")
+      temp = temp.next
+    print()
+
+# Create a queue
+myQueue = Queue()
+
+myQueue.enqueue('A')
+myQueue.enqueue('B')
+myQueue.enqueue('C')
+
+print("Queue: ", end="")
+myQueue.printQueue()
+print("Peek: ", myQueue.peek())
+print("Dequeue: ", myQueue.dequeue())
+print("Queue after Dequeue: ", end="")
+myQueue.printQueue()
+print("isEmpty: ", myQueue.isEmpty())
+print("Size: ", myQueue.size())
+
+# Output:
+Queue: A -> B -> C ->  
+Peek: A  
+Dequeue: A  
+Queue after Dequeue: B -> C ->  
+isEmpty: False  
+Size: 2
+```
+
+Reasons for using linked lists to implement queues:
+
+- **Dynamic size:** The queue can grow and shrink dynamically, unlike with arrays.
+- **No shifting:** The front element of the queue can be removed (enqueue) without having to shift other elements in the memory.
+
+Reasons for **not** using linked lists to implement queues:
+
+- **Extra memory:** Each queue element must contain the address to the next element (the next linked list node).
+- **Readability:** The code might be harder to read and write for some because it is longer and more complex.
 ### Method 2: Using collections.deque (Recommended)
 ```
 from collections import deque
@@ -323,78 +461,4 @@ pq.enqueue("Task 1", 3)
 pq.enqueue("Task 2", 1)
 pq.enqueue("Task 3", 2)
 print(pq.dequeue())  # Task 2 (highest priority)
-```
-
----
-## Real-World Applications
-
-1. **CPU Scheduling** - Process scheduling in operating systems
-    
-2. **Print Spooling** - Managing print jobs
-    
-3. **Message Queues** - In distributed systems
-    
-4. **Breadth-First Search** - Graph traversal algorithms
-    
-5. **Request Handling** - Web servers handling requests
-    
-6. **Buffer Management** - IO buffers, streaming data
-    
-
-## When to Use Queues
-
-✅ **Use Queue when:**
-
-- You need FIFO behavior
-    
-- Processing items in order of arrival
-    
-- Implementing BFS algorithms
-    
-- Managing shared resources
-    
-- Handling asynchronous data
-    
-
-❌ **Avoid Queue when:**
-
-- You need random access to elements
-    
-- LIFO behavior is required (use Stack)
-    
-- You frequently need to access middle elements
-    
----
-## Advanced Example: Sliding Window Maximum
-```
-from collections import deque
-
-def sliding_window_maximum(nums, k):
-    """Find maximum in each sliding window of size k"""
-    if not nums or k <= 0:
-        return []
-    
-    result = []
-    window = deque()  # Store indices
-    
-    for i in range(len(nums)):
-        # Remove indices outside current window
-        while window and window[0] <= i - k:
-            window.popleft()
-        
-        # Remove smaller elements from back
-        while window and nums[window[-1]] < nums[i]:
-            window.pop()
-        
-        window.append(i)
-        
-        # Add to result when first window is complete
-        if i >= k - 1:
-            result.append(nums[window[0]])
-    
-    return result
-
-nums = [1, 3, -1, -3, 5, 3, 6, 7]
-k = 3
-print(sliding_window_maximum(nums, k))  # [3, 3, 5, 5, 6, 7]
 ```

@@ -48,6 +48,8 @@ print("'Milad' has hash code:", hash_function('Milad'))
 #Output:
 'Milad' has hash code: 7
 ```
+**Note:** Read about `ord()` [[ord() function|here]].
+
 The number returned by the hash function is called the **hash code**.
 
 >**Unicode number:** Everything in our computers are stored as numbers, and the Unicode code number is a unique number that exist for every character. For example, the character `A` has Unicode number `65`.

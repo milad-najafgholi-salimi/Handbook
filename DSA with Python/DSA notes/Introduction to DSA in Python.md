@@ -43,9 +43,9 @@ Algorithms are step-by-step procedures or instructions used to solve a specific 
 
 Common algorithms include:
 
-- Searching (Linear Search, Binary Search)
+- Searching
     
-- Sorting (Bubble Sort, Merge Sort, Quick Sort)
+- Sorting
     
 - Recursion
     
@@ -53,80 +53,7 @@ Common algorithms include:
     
 - Greedy Algorithms
     
-- Graph Algorithms (BFS, DFS, Dijkstra)
-    
-
-Example of a simple search algorithm:
-```
-def linear_search(arr, target):
-    for i in range(len(arr)):
-        if arr[i] == target:
-            return i
-    return -1
-```
-
----
-## Why Learn DSA in Python?
-
-### 1. Easy Syntax
-
-Python has a clean and simple syntax, making it ideal for beginners to learn DSA concepts without worrying too much about complex code.
-
-### 2. Built-in Libraries
-
-Python provides powerful built-in data structures like:
-
-- `list`
-    
-- `set`
-    
-- `dict`
-    
-- `collections.deque`
-    
-- `heapq`
-    
-
-These help you implement algorithms more efficiently.
-
-### 3. Industry Importance
-
-DSA is essential for:
-
-- Coding interviews (Google, Microsoft, Amazon, etc.)
-    
-- Competitive programming
-    
-- Software development
-    
-- Problem-solving skills
-    
-
----
-
-## Key Concepts You Should Learn First
-
-If you are starting DSA in Python, follow this order:
-
-1. Time and Space Complexity (Big-O notation)
-    
-2. Arrays & Strings
-    
-3. Recursion
-    
-4. Sorting & Searching
-    
-5. Linked Lists
-    
-6. Stacks & Queues
-    
-7. Trees (Binary Trees, BST)
-    
-8. Graphs
-    
-9. Dynamic Programming
-    
-
+- Graph Algorithms
 ---
 
 ## How Python Supports DSA Learning

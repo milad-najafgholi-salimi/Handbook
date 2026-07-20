@@ -1,7 +1,7 @@
 - Data Frames are data displayed in a format as a table.
 	Data Frames can have different types of data inside it. While the first column can be character, the second and 
 	third can be numeric or logical. However, each column should have the same type of data.
-	Use the data.frame() function to create a data frame - Example:
+	Use the `data.frame()` function to create a data frame - Example:
 ```
 Data_Frame <- data.frame (
 	  Training = c("Strength", "Stamina", "Other"),
@@ -14,7 +14,7 @@ Data_Frame
 ```
 ---
 #### Summarize the Data
-- Use the summary() function to summarize the data from a Data Frame - Example:
+- Use the `summary()` function to summarize the data from a Data Frame - Example:
 ```
 Data_Frame <- data.frame (
   Training = c("Strength", "Stamina", "Other"),
@@ -28,7 +28,7 @@ summary(Data_Frame)
 ```
 ---
 #### Access Items
-- We can use single brackets [ ], double brackets [[ ]] or $ to access columns from a data frame - Example:
+- We can use single brackets `[ ]`, double brackets [[ ]] or `$` to access columns from a data frame - Example:
 ```
 Data_Frame <- data.frame (
   Training = c("Strength", "Stamina", "Other"),
@@ -44,7 +44,7 @@ Data_Frame$Training
 ```
 ---
 #### Add Rows
-- Use the rbind() function to add new rows in a Data Frame - Example:
+- Use the `rbind()` function to add new rows in a Data Frame - Example:
 ```
 Data_Frame <- data.frame (
   Training = c("Strength", "Stamina", "Other"),
@@ -60,7 +60,7 @@ New_row_DF
 ```
 ---
 #### Add Columns
-- Use the cbind() function to add new columns in a Data Frame - Example:
+- Use the `cbind()` function to add new columns in a Data Frame - Example:
 ```
 Data_Frame <- data.frame (
   Training = c("Strength", "Stamina", "Other"),
@@ -76,7 +76,7 @@ New_col_DF
 ```
 ---
 #### Remove Rows and Columns
-- Use the c() function to remove rows and columns in a Data Frame - Example:
+- Use the `c()` function to remove rows and columns in a Data Frame - Example:
 ```
 Data_Frame <- data.frame (
   Training = c("Strength", "Stamina", "Other"),
@@ -92,7 +92,7 @@ Data_Frame_New
 ```
 ---
 #### Amount of Rows and Columns
-- Use the dim() function to find the amount of rows and columns in a Data Frame - Example:
+- Use the `dim()` function to find the amount of rows and columns in a Data Frame - Example:
 ```
 Data_Frame <- data.frame (
   Training = c("Strength", "Stamina", "Other"),
@@ -105,7 +105,7 @@ dim(Data_Frame)
 # output:
 	[1] 3 3
 ```
-You can also use the ncol() function to find the number of columns and nrow() to find the number of rows - Example:
+You can also use the `ncol()` function to find the number of columns and `nrow()` to find the number of rows - Example:
 ```
 Data_Frame <- data.frame (
   Training = c("Strength", "Stamina", "Other"),
@@ -122,7 +122,7 @@ nrow(Data_Frame)
 ```
 ---
 #### Data Frame Length
-Use the length() function to find the number of columns in a Data Frame (similar to ncol()) - Example:
+Use the `length()` function to find the number of columns in a Data Frame (similar to `ncol()`) - Example:
 ```
 Data_Frame <- data.frame (
   Training = c("Strength", "Stamina", "Other"),
@@ -137,7 +137,7 @@ length(Data_Frame)
 ```
 ---
 #### Combining Data Frames
-- Use the rbind() function to combine two or more data frames in R vertically - Example:
+- Use the `rbind()` function to combine two or more data frames in R vertically - Example:
 ```
 Data_Frame1 <- data.frame (
   Training = c("Strength", "Stamina", "Other"),
@@ -154,7 +154,7 @@ Data_Frame2 <- data.frame (
 New_Data_Frame <- rbind(Data_Frame1, Data_Frame2)
 New_Data_Frame
 ```
-And use the cbind() function to combine two or more data frames in R horizontally - Example:
+And use the `cbind()` function to combine two or more data frames in R horizontally - Example:
 ```
 Data_Frame3 <- data.frame (
   Training = c("Strength", "Stamina", "Other"),

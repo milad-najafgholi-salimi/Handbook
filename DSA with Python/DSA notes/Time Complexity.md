@@ -3,6 +3,29 @@
 Time complexity is a way to measure how the runtime of an algorithm grows as the input size increases. It's expressed using **Big O notation**, which describes the upper bound of growth.
 
 ---
+## Big-O Notation (O) Vs. Big-Theta Notation (Θ) Vs. Big-Omega Notation (Ω)
+### 1. Big-O Notation (O) – The "Upper Bound" (Worst Case)
+
+- **What it means:** This is the **maximum** time (or space) an algorithm will ever take. It is the "ceiling."
+    
+- **The Analogy:** If you are driving, Big-O is the **speed limit**. You will not go faster than this (in the worst case).
+    
+- **Why we use it:** It guarantees your code won't blow up, even with massive input. This is what most people mean when they say "complexity."
+### 2. Big-Theta Notation (Θ) – The "Tight Bound" (Exact Average)
+
+- **What it means:** This means the algorithm is **both** O(f(n)) **and** Ω(f(n)) at the same time. The upper and lower bounds match.
+    
+- **The Analogy:** If Big-O is the speed limit and Omega is the minimum speed, Theta is your **cruise control**. You are driving exactly at that speed most of the time.
+    
+- **Why we use it:** It gives the most mathematically precise description of an algorithm's growth because it tells you exactly how it behaves for _all_ inputs of size `n`.
+### 3. Big-Omega Notation (Ω) – The "Lower Bound" (Best Case)
+
+- **What it means:** This is the **minimum** time an algorithm will ever take. It is the "floor."
+    
+- **The Analogy:** If Big-O is the speed limit, Big-Omega is the **minimum speed limit** on the highway (you will always go at least this fast).
+    
+- **Why we use it:** It tells you the best-case scenario. It’s useful for knowing the absolute fastest your algorithm can run, but it’s usually less useful for practical performance because best cases are rare.
+---
 ## Common Time Complexities (from fastest to slowest)
 |Notation|Name|Description|Example|
 |---|---|---|---|
@@ -13,48 +36,6 @@ Time complexity is a way to measure how the runtime of an algorithm grows as the
 |**O(n²)**|Quadratic|Time grows quadratically|Nested loops|
 |**O(2ⁿ)**|Exponential|Very slow growth|Recursive Fibonacci|
 |**O(n!)**|Factorial|Extremely slow|Permutations|
-
----
-## Visual Examples in Python
-
-### O(1) - Constant Time
-```
-def get_first_element(arr):
-    return arr[0]  # Always takes same time regardless of array size
-
-# Even if arr has 1 or 1 million elements, operation is constant
-```
-### O(log n) - Logarithmic Time
-```
-def binary_search(arr, target):
-    left, right = 0, len(arr) - 1
-    
-    while left <= right:  # Each iteration halves the search space
-        mid = (left + right) // 2
-        if arr[mid] == target:
-            return mid
-        elif arr[mid] < target:
-            left = mid + 1
-        else:
-            right = mid - 1
-    return -1
-```
-### O(n) - Linear Time
-```
-def find_max(arr):
-    max_val = arr[0]
-    for num in arr:  # Loop runs n times
-        if num > max_val:
-            max_val = num
-    return max_val
-```
-### O(n²) - Quadratic Time
-```
-def print_pairs(arr):
-    for i in range(len(arr)):      # n times
-        for j in range(len(arr)):  # n times for each i
-            print(arr[i], arr[j])  # Total: n * n operations
-```
 
 ---
 ## Python-Specific Considerations
@@ -127,41 +108,6 @@ def find_element(arr, target):
 ```
 
 ---
-## Common Pitfalls
-
-### Hidden Complexities
-```
-# Inefficient string concatenation
-def build_string_bad(words):
-    result = ""
-    for word in words:      # O(n) iterations
-        result += word      # O(n) each time due to immutability
-    return result
-# Total: O(n²)
-
-# Efficient approach
-def build_string_good(words):
-    return "".join(words)   # O(n)
-```
-### Recursive Complexity
-```
-# Exponential time - BAD
-def fib_bad(n):
-    if n <= 1:
-        return n
-    return fib_bad(n-1) + fib_bad(n-2)  # O(2ⁿ)
-
-# Linear time - GOOD
-def fib_good(n):
-    if n <= 1:
-        return n
-    a, b = 0, 1
-    for _ in range(2, n + 1):  # O(n)
-        a, b = b, a + b
-    return b
-```
-
----
 ## Quick Reference Table
 |Data Structure|Access|Search|Insert|Delete|
 |---|---|---|---|---|
@@ -174,18 +120,3 @@ def fib_good(n):
 
 *At beginning/end: append/pop are O(1) amortized  
 **Average case; worst case O(n)
-
-## Tips for Interview Preparation
-
-1. **Always consider input size**: What works for n=10 might fail for n=10^6
-    
-2. **Look for nested loops**: Usually indicate O(n²) or worse
-    
-3. **Binary search pattern**: Often indicates O(log n)
-    
-4. **Divide and conquer**: Often O(n log n)
-    
-5. **Space-time tradeoff**: Sometimes using more memory can improve time complexity
-
->**Remember:** Time complexity helps you choose the right algorithm for your specific constraints and input sizes!
-

@@ -24,8 +24,6 @@ The Tree data structure can be useful in many cases:
 
 **AVL Trees:** A type of Binary Search Tree that self-balances so that for every node, the difference in height between the left and right subtrees is at most one. This balance is maintained through rotations when nodes are inserted or deleted.
 
-Each of these data structures are described in detail on the next pages, including animations and how to implement them.
-
 ---
 ## Trees vs Arrays and Linked Lists
 

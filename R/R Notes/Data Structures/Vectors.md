@@ -1,4 +1,4 @@
-- A vector is simply a list of items that are of the same type. To combine the list of items to a vector, use the c() function and separate the items by a comma. - Example:
+- A vector is simply a list of items that are of the same type. To combine the list of items to a vector, use the `c()` function and separate the items by a comma. - Example:
 ```
 # vector of strings 
 fruits <- c("banana", "apple", "orange")
@@ -6,7 +6,7 @@ fruits <- c("banana", "apple", "orange")
 # print fruits
 fruits
 ```
-To create a vector with numerical values in a sequence, use the : operator - Example:
+To create a vector with numerical values in a sequence, use the `:` operator - Example:
 ```
 # vector with numerical values in a sequence
 numbers <- 1:10

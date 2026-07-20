@@ -53,7 +53,7 @@ Found at index 5
 
 Each time Binary Search checks a new value to see if it is the target value, the search area is halved.
 
-This means that even in the worst case scenario where Binary Search cannot find the target value, it still only needs $log_2n$ comparisons to look through a sorted array of n values.
+This means that even in the worst case scenario where Binary Search cannot find the target value, it still only needs $log_2n$ comparisons to look through a sorted array of `n` values.
 
 Time complexity for Binary Search is: O($log_2n$)
 

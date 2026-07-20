@@ -1,11 +1,17 @@
 The **AVL** Tree is a type of Binary Search Tree named after two Soviet inventors Georgy **A**delson-**V**elsky and Evgenii **L**andis who invented the AVL Tree in 1962.
 
-AVL trees are self-balancing, which means that the tree height is kept to a minimum so that a very fast runtime is guaranteed for searching, inserting and deleting nodes, with time complexity O(logn).
+AVL trees are self-balancing, which means that the tree height is kept to a minimum so that a very fast runtime is guaranteed for searching, inserting and deleting nodes, with time complexity `O(logn)`.
 
 ---
 The only difference between a **regular Binary Search Tree** and an **AVL Tree** is that AVL Trees do rotation operations in addition, to keep the tree balance.
 
 A Binary Search Tree is in balance when the difference in height between left and right subtrees is less than 2.
+
+By keeping balance, the AVL Tree ensures a minimum tree height, which means that search, insert, and delete operations can be done really fast.
+
+![AVL Tree](AVL-tree.png)
+
+The two trees above are both Binary Search Trees, they have the same nodes, and the same in-order traversal (alphabetical), but the height is very different because the AVL Tree has balanced itself.
 
 ---
 ## The Balance Factor
@@ -17,9 +23,10 @@ The subtree heights are stored at each node for all nodes in an AVL Tree, and th
 The height of a subtree is the number of edges between the root node of the subtree and the leaf node farthest down in that subtree.
 
 ---
-The **Balance Factor** (BF) for a node (X) is the difference in height between its right and left subtrees.
+```
+The Balance Factor(BF) for a node (X) is the difference in height between its right and left subtrees.
 
-BF(X)=height(rightSubtree(X))−height(leftSubtree(X))
+BF(X) = height(rightSubtree(X)) − height(leftSubtree(X))
 
 Balance factor values
 
@@ -28,6 +35,7 @@ Balance factor values
 - less than 0: The node is "left heavy".
 
 If the balance factor is less than -1, or more than 1, for one or more nodes in the tree, the tree is considered not in balance, and a rotation operation is needed to restore balance.
+```
 
 ---
 ## The Four "out-of-balance" Cases
@@ -84,7 +92,7 @@ This process, known as retracing, is handled through recursion. As the recursive
 This code is based on the BST implementation for inserting nodes.
 
 There is only one new attribute for each node in the AVL tree compared to the BST, and that is the height, but there are many new functions and extra code lines needed for the AVL Tree implementation because of how the AVL Tree rebalances itself.
-
+#### Implement AVL Tree in Python:
 ```
 class TreeNode:
   def __init__(self, data):
@@ -183,6 +191,8 @@ A, B, C, D, E, F, G, H,
 When deleting a node that is not a leaf node, the AVL Tree requires the `minValueNode()` function to find a node's next node in the in-order traversal. This is the same as when deleting a node in a Binary Search Tree.
 
 To delete a node in an AVL Tree, the same code to restore balance is needed as for the code to insert a node.
+
+#### Delete Node:
 ```
 class TreeNode:
   def __init__(self, data):
@@ -341,6 +351,11 @@ B, C, D, E, F, G, H,
 
 ---
 ## Time Complexity for AVL Trees
+In worst case, algorithms like search, insert, and delete must run through the whole height of the tree. This means that keeping the height (h) of the tree low, like we do using AVL Trees, gives us a lower runtime.
+
+![unbalance and balance tree](unbalance_and_balance_tree_AVL.png)
+
+See the comparison of the time complexities between Binary Search Trees and AVL Trees below, and how the time complexities relate to the height (h) of the tree, and the number of nodes (n) in the tree.
 
 - The **BST** is not self-balancing. This means that a BST can be very unbalanced, almost like a long chain, where the height is nearly the same as the number of nodes. This makes operations like searching, deleting and inserting nodes slow, with time complexity `O(h)=O(n)`.
 - The **AVL Tree** however is self-balancing. That means that the height of the tree is kept to a minimum so that operations like searching, deleting and inserting nodes are much faster, with time complexity `O(h)=O(logn)`.
@@ -348,9 +363,11 @@ B, C, D, E, F, G, H,
 ---
 ## O(logn) Explained
 
-The fact that the time complexity is `O(h)=O(logn)` for search, insert, and delete on an AVL Tree with height h and nodes n can be explained like this:
+The fact that the time complexity is `O(h) = O(logn)` for search, insert, and delete on an AVL Tree with height `h` and nodes `n` can be explained like this:
 
-Imagine a perfect Binary Tree where all nodes have two child nodes except on the lowest level.
+Imagine a perfect Binary Tree where all nodes have two child nodes except on the lowest level, like the AVL Tree below.
+
+![Tree Example](Tree-Example.png)
 
 The number of nodes on each level in such an AVL Tree are:
 
@@ -375,7 +392,7 @@ $$n_5=2^6−1=63$$
 So in general, the relationship between the height `h` of a perfect Binary Tree and the number of nodes in it `n`, can be expressed like this:
 
 $$n_h=2^{h+1}−1$$
-> **Note:** The formula above can also be found by calculating the sum of the geometric series 20+21+22+23+...+2n
+> **Note:** The formula above can also be found by calculating the sum of the geometric series $2^0+2^1+2^2+2^3+...+2^n$
 
 We know that the time complexity for searching, deleting, or inserting a node in an AVL tree is `O(h)`, but we want to argue that the time complexity is actually `O(log(n))`, so we need to find the height `h` described by the number of nodes `n`:
 
@@ -384,6 +401,6 @@ $$n+1=2^{h+1}$$
 $$log_2(n+1)=log_2(2^{h+1})$$
 $$h=log_2(n+1)−1$$
 $$O(h)=O(logn)$$
-For a Binary Tree with a lot of nodes (big n), the "+1" and "-1" terms are not important when we consider time complexity.
+How the last line above is derived might not be obvious, but for a Binary Tree with a lot of nodes (big n), the "+1" and "-1" terms are not important when we consider time complexity.
 
 The math above shows that the time complexity for search, delete, and insert operations on an AVL Tree `O(h)`, can actually be expressed as `O(logn)`, which is fast, a lot faster than the time complexity for BSTs which is `O(n)`.
