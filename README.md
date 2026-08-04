@@ -1,39 +1,81 @@
-This is my personal Handbook to understand better subjects. 
-My main sources to gathering these information are from:
+# 📘 Personal Handbook
+
+This is my personal Handbook to understand better subjects.
+
+My main sources for gathering this information are:
 - **w3schools**
 - **Chat-GPT**
-- Deepseek
-- **YouTube** 
-- regular **search**
+- **Deepseek**
+- **YouTube**
+- Regular **search**
 - Paid courses
-- Maktabkhooneh.org
-- https://github.com/jadijadi
+- [Maktabkhooneh.org](https://maktabkhooneh.org)
+- [Jadi's GitHub](https://github.com/jadijadi)
 - Ali Bigdeli
 - Jadi Mirmirani
 - Farzad Minooie
 
-To have a beautiful experience, open ***"All indexes.md"*** file in **Obsidian**. 
-It's like a wiki-link that links every single file together; You don't need to open files manually. Just search your topic in Sorted lists.
-
 ---
 
-![Example Pic 1](images/Exp-1.png)
----
+## 🖼️ Preview
+
+![Example Pic 1](images/Exp-1.png)  
 ![Example pic 2](images/Exp-2.png)
 
-# How to use Guide
-1. Download *Obsidian* from https://obsidian.md/download
-2. Clone this repo on your device.
-3. Open and use.
+---
 
-## How to make it beautiful like mine?!
-1. Open obsidian and go to the settings.
-2. Go to "**Community plugins**" and click on "_Browse_". (Note: If this is your first time, click on "Turn on community plugins" first.)
-3. Search for "*Style settings*" and download and enable.
-4. Go to "**appearance**" and click on "Manage" and search for "*AnuPpuccin*" or whatever you like and install and enable it.
-5. Go to "**Community plugins**" again and in "**installed plugins**" section click on "*Option*" icon and click on import.
-6. paste following code in it and enjoy:
-```
+## ℹ️ About This Project
+
+This project was built for my own personal need — to keep track of what I've learned and how to store it in a way that I can revisit and review many times later.
+
+I wanted it to be:
+- **Fast**
+- **Easy**
+- **Accessible everywhere**
+- **Easily replicable** (so it wouldn’t get lost)
+
+I could have written everything in a physical notebook, but that would have taken way too much time. I would have needed one or maybe several notebooks to carry around everywhere. Also, if I ever wanted to change something later, it would end up messy with crossed-out lines and corrections.
+
+I first started writing notes in plain text files — you can still see them in the old branch. But I don't work on that anymore.
+
+Then I discovered **Obsidian**, and it made my life so much easier. I absolutely love it.
+
+---
+
+## 🎯 What’s the Goal of This Handbook?
+
+It’s **not** meant to turn you into a programmer.
+
+Instead, it aims to make programmers **independent** from constantly searching for basic, essential, or everyday topics we deal with regularly.
+
+**That said, it's not exclusive to programmers either—anyone with curiosity and interest can benefit from it, regardless of background or skill level.**
+
+On the other hand, I started this project as a **living document** of what I’ve learned. I don’t think this project will ever stop as long as I'm alive — unless I get really, really busy.
+
+**Use it and enjoy!** 🚀
+
+---
+
+## 🧭 How to Use
+
+1. Download **Obsidian** from [https://obsidian.md/download](https://obsidian.md/download)
+2. Clone this repository on your device.
+3. Open the folder/directory in Obsidian.
+4. For the best experience, open **`All indexes.md`** — it's like a wiki-link that connects every single file together. You don’t need to open files manually. Just search your topic in the sorted lists.
+
+---
+
+## 🎨 How to Make It Look Like Mine?
+
+1. Open Obsidian and go to **Settings**.
+2. Go to **Community plugins** and click **Browse**.  
+   *(Note: If this is your first time, click "Turn on community plugins" first.)*
+3. Search for **Style settings**, download, and enable it.
+4. Go to **Appearance**, click **Manage**, search for **AnuPpuccin** (or any theme you like), install and enable it.
+5. Go back to **Community plugins** → **Installed plugins** → click the **Options** icon (gear) next to **Style settings** → **Import**.
+6. Paste the following JSON code and enjoy:
+
+```json
 {
   "anuppuccin-theme-settings@@anuppuccin-theme-light": "ctp-rosepine-light",
   "anuppuccin-theme-settings@@anuppuccin-theme-dark": "ctp-frappe",
@@ -109,4 +151,9 @@ It's like a wiki-link that links every single file together; You don't need to o
   "anuppuccin-theme-settings@@anp-border-padding": 20
 }
 ```
-Have fun!
+
+## 🤝 Contributing
+
+This is a personal project, but feel free to **fork** it and customize it for your own learning journey. If you have suggestions, open an issue or a pull request!
+
+**Enjoy your learning!** ✨
