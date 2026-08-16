@@ -1,0 +1,5 @@
+### [[Data Types in R]]
+### [[How to check variable type in R]]
+### [[Logical Operators in R]]
+### [[Printing in R]]
+### [[Vectors in R]]

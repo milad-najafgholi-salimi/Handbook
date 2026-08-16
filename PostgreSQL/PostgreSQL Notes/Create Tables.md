@@ -9,7 +9,7 @@ Example:
 ```
 CREATE TABLE person (
 	id int,
-	first_name VARCHAR(50), # 50 here means maximum can hav 50 characters
+	first_name VARCHAR(50), # 50 here means maximum can have 50 characters
 	last_name VARCHAR(50),
 	gender VARCHAR(6),
 	date_of_birth DATE);
