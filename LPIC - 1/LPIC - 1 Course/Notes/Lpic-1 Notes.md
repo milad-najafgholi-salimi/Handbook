@@ -1,0 +1,7 @@
+### [[zsh]]
+### [[Usefull shell commands]]
+### [[bat]]
+### [[cat]]
+### [[paste]]
+### [[od]]
+### [[split]]
