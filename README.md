@@ -14,6 +14,7 @@ My main sources for gathering this information are:
 - Ali Bigdeli
 - Jadi Mirmirani
 - Farzad Minooie
+- **simplilearn** youtube channel
 
 ---
 
