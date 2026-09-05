@@ -1,8 +1,10 @@
 By piping `STDOUT` from other commands into the `xargs` utility, you can build command-line commands on the fly.
 
+>In plain English: it takes the output of one command and turns it into arguments for another command.
+
 ![pic-81](Pics/81.png)
  
-In Listing 1.70, three blank files are created using the touch command. The third command uses a pipeline. The first command in the pipeline lists any files that have the name EmptyFilen.txt. The output from the ls command is piped as `STDIN` into the `xargs` utility. The `xargs` command uses the -p option. This option causes the `xargs` utility to stop and ask permission before enacting the constructed command-line command. Notice that the absolute directory reference for the rm command is used (the rm command is covered in more detail in Chapter 4). This is sometimes needed when employing `xargs`, depending on your distribution.
+In Listing 1.70, three blank files are created using the touch command. The third command uses a pipeline. The first command in the pipeline lists any files that have the name EmptyFilen.txt. The output from the `ls` command is piped as `STDIN` into the `xargs` utility. The `xargs` command uses the `-p` option. This option causes the `xargs` utility to stop and ask permission before enacting the constructed command-line command. Notice that the absolute directory reference for the `rm` command is used (the `rm` command is covered in more detail in Chapter 4). This is sometimes needed when employing `xargs`, depending on your distribution.
 
 ![pic-82](Pics/82.png)
 

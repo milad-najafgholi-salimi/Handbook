@@ -2,8 +2,8 @@ The contraction of 'Basic Regular Expressions' is 'BRE'.
 
 ![pic-51](Pics/51.png)
 
-To find text file records that begin with particular characters, you can precede them with a caret (^) symbol.
-For finding text file records where particular characters are at the record’s end, append them with a dollar sign ($) symbol.
+To find text file records that begin with particular characters, you can precede them with a caret (`^`) symbol.
+For finding text file records where particular characters are at the record’s end, append them with a dollar sign (`$`) symbol.
 
 ![pic-52](Pics/52.png)
 

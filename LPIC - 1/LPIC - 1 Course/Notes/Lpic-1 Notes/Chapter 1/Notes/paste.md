@@ -5,6 +5,6 @@
 
 You have another beautiful and powerful option. Use `bat` :
 ```
-batcat file1 file2
+bat file1 file2
 ```
 The result will shock you.

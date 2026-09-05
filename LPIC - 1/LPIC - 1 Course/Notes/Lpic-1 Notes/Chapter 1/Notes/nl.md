@@ -12,6 +12,6 @@ If you would like all file’s lines to be numbered, including blank ones, then 
 
 Again you have another power option. You can use `bat`. Just install it and use:
 ```
-batcat file
+bat file
 ```
 

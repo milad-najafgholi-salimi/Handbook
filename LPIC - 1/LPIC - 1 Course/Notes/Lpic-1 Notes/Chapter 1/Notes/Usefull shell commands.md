@@ -120,6 +120,7 @@ man 8 chpasswd
 ![pic-10](Pics/10.png)
 
 Notice that each command is preceded by a number. This allows you to recall a command from your history list via its number and have it automatically executed;
+
 ![pic-11](Pics/11.png)
 
 Note that in order to rerun the command, you must put an exclamation mark (!) prior to the number. The shell will display the command you are recalling and then execute it, which is handy.

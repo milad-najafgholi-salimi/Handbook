@@ -1,5 +1,7 @@
 ### [[zsh]]
 ### [[Usefull shell commands]]
+### [[man]]
+### [[less]]
 ### [[bat]]
 ### [[cat]]
 ### [[paste]]

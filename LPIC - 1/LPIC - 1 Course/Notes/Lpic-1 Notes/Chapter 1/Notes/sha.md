@@ -1,4 +1,4 @@
-The Secure Hash Algorithms (SHA) is a family of various hash functions. Though typically used for cryptography purposes, they can also be used to verify a file’s integrity after it is copied or moved to another location.
+The **Secure Hash Algorithms** (*SHA*) is a family of various hash functions. Though typically used for cryptography purposes, they can also be used to verify a file’s integrity after it is copied or moved to another location.
 Several utilities implement these various algorithms on Linux.
 The quickest way to find them is via the method shown in Listing 1.47. Keep in mind your particular distribution may store them in the `/bin` directory instead.
 

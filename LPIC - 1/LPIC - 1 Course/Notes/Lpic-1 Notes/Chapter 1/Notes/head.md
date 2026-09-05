@@ -1,4 +1,4 @@
-By default, the head command displays the fi rst 10 lines of a text file.
+By default, the head command displays the first 10 lines of a text file.
 
 ![pic-29](Pics/29.png)
 
