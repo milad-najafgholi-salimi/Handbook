@@ -4,7 +4,7 @@ The core tool to use for handling `.deb` files is the `dpkg` program, which is a
 
 ![pic-4](Pics/4.png)
 
-Each action has a set of options that you can use to modify its basic behavior, such as forcing the overwrite of an already installed package or ignoring any dependency errors. To use the `dpkg` program, you must have the .deb software package available on your system. Often you can find .deb versions of application packages ready for distribution on the application website. Also, most distributions maintain a central location for packages to download.
+Each action has a set of options that you can use to modify its basic behavior, such as forcing the overwrite of an already installed package or ignoring any dependency errors. To use the `dpkg` program, you must have the `.deb` software package available on your system. Often you can find `.deb` versions of application packages ready for distribution on the application website. Also, most distributions maintain a central location for packages to download.
 
 ![pic-5](Pics/5.png)
 

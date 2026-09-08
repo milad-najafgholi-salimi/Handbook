@@ -18,3 +18,7 @@
 ### [[kill]]
 ### [[nohup - Keeping a Job Running after Logout]]
 ### [[nice - renice]]
+### [[Sending Signals to Processes]]
+### [[Sending Signals with the kill Command]]
+### [[Sending Signals with the killall Command]]
+### [[Sending Signals with the pkill Command]]
