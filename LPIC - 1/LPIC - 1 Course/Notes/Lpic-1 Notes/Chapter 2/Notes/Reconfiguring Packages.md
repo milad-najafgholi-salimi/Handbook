@@ -1,5 +1,5 @@
 Typically everyone needs to modify configuration files to meet the needs of their system and users. However, if you make changes that cause serious unexpected problems, you may want to return to the package’s initial installation state.
-If the package required configuration when it was installed, you are in luck! Instead of purging the package and reinstalling it, you can employ the handy `dpkg reconfigure` tool.
+If the package required configuration when it was installed, you are in luck! Instead of purging the package and reinstalling it, you can employ the handy **dpkg reconfigure tool**.
 To use it, just type the command, followed by the name of the package you need to reconfigure.
 
 For example, if you needed to fix the cups (printing software covered in

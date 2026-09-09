@@ -18,4 +18,4 @@ When you have found the desired package, peruse its detailed information via the
 
 ![pic-18](Pics/18.png)
 
-The apt-cache utility provides several ways to discover package information. But you need another program to handle other package management functions.
+The `apt-cache` utility provides several ways to discover package information. But you need another program to handle other package management functions.
