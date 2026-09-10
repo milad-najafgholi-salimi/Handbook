@@ -1,0 +1,1 @@
+A **sector** is the smallest physical unit of storage on a hard disk drive (HDD), solid-state drive (SSD), CD, DVD, or floppy disk. It is the basic building block that the hardware itself reads from and writes to.

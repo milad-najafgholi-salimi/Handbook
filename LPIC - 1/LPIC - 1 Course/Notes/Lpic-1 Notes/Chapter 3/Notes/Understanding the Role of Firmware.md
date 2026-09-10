@@ -1,0 +1,3 @@
+All IBM-compatible workstations and servers utilize some type of built-in firmware to control how the installed operating system starts. On older workstations and servers, this firmware was called the **Basic Input/Output System** (*BIOS*). On newer workstations and servers, a new method, called the **Unified Extensible Firmware Interface** (*UEFI*), is responsible for maintaining the system hardware status and launching an installed operating system.
+
+Both methods eventually launch the main operating system program, but each method uses different ways of doing that. This section walks through the basics of both **BIOS** and **UEFI** methods, showing how they participate in the Linux boot process.
