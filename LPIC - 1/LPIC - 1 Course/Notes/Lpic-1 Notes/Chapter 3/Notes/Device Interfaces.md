@@ -1,0 +1,1 @@
+Each device you connect to your Linux system uses some type of standard protocol to communicate with the system hardware. The Linux kernel software must know how to send data to and receive data from the hardware device using those protocols. There are currently three popular standards used to connect devices.

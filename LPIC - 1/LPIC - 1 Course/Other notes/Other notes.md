@@ -21,7 +21,7 @@
 ---
 ## 3. Filesystems & Directories
 - ### [[Root directory]]
-- ### [[proc directory]]
+- ### [[proc directory - what it does]]
 - ### [[Sysfs]]
 ---
 ## 4. Device Management & Logging
